@@ -1,7 +1,3 @@
 class GuestsCleanupJob < ActiveJob::Base
-  queue_as :default
-
-  def perform(*args)
-    # Do something later
-  end
+queue_as :low_priority
 end
